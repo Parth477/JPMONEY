@@ -1,0 +1,46 @@
+<html>
+    <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="/static/img/nlogo_icon.png">
+    <!-- Author Meta -->
+    <meta name="author" content="Hackthon">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+	
+	    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+        <!---
+        CSS
+        ============================================= -->
+        <link rel="stylesheet" href="/static/css/linearicons.css">
+        <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/static/css/bootstrap.css">
+        <link rel="stylesheet" href="/static/css/magnific-popup.css">
+        <link rel="stylesheet" href="/static/css/nice-select.css">							
+        <link rel="stylesheet" href="/static/css/animate.min.css">
+        <link rel="stylesheet" href="/static/css/owl.carousel.css">
+        <link rel="stylesheet" href="/static/css/main.css">
+        <title>Login Page</title>
+    </head>
+    <body>
+						
+							<form name="form_login" class="box" action="/login/auth/" method="POST" target="_self">{% csrf_token %}
+							  <h1>login</h1>
+							  <input type="text" name="username" id="username" placeholder="Username" autocomplete="off">
+							  <input type="password" name="pass" id="pass" placeholder="Password" autocomplete="off">
+							  <input type="submit" id="submit" value="login">
+							</form>
+						
+			
+
+
+
+
+    </body>
+</html>
